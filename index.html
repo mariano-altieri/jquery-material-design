@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Material design</title>
+    <title>JQuery Material design</title>
 
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.input.css">
@@ -11,12 +11,7 @@
     <form>
 
         <fieldset class="clearfix">
-            <legend>Example 1</legend>
-
-            <!--<div class="jmd-dark jmd-ctrl">
-                <label for="input1" class="jmd-label jmd-line">Your name</label>
-                <input type="text" class="jmd-input" id="input1" name="your name">
-            </div>-->
+            <legend>Simple Inputs</legend>
 
             <div class="float-left">
                 <input type="text" id="input1" name="fname" placeholder="First name" value="Mariano" class="js-input">
@@ -39,6 +34,7 @@
         $(document).ready(function(){
             $('.js-input').JMDInput();
 
+            //To test the destroy method, just uncomment the following line
             //$('.js-input').JMDInput('destroy');
         });
     </script>

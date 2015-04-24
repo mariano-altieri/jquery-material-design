@@ -50,7 +50,6 @@
                         id: id
                     });
             }
-
         },
 
         destroy: function(){
@@ -64,7 +63,6 @@
             if(this.$element.val() == ''){
                 this.$ctrl.addClass(this.options.prefix+'-float');
             }
-
         },
 
         removeFocus: function(){
