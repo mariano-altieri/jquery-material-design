@@ -1,0 +1,25 @@
+
+fieldset{
+    border: none;
+    margin: 20px;
+}
+
+legend{
+    position: relative;
+    top: -10px;
+    font-size: 0.85em;
+}
+
+html, body {
+    margin: 0em;
+    font: normal normal normal 13.3333330154419px/normal Arial;
+    text-rendering: auto;
+    color: black;
+}
+
+.float-left{
+    float: left;
+}
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Material design</title>
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.input.css">
+</head>
+<body>
+    <form>
+
+        <fieldset class="clearfix">
+            <legend>Example 1</legend>
+
+            <!--<div class="jmd-dark jmd-ctrl">
+                <label for="input1" class="jmd-label jmd-line">Your name</label>
+                <input type="text" class="jmd-input" id="input1" name="your name">
+            </div>-->
+
+            <div class="float-left">
+                <input type="text" id="input1" name="fname" placeholder="First name" value="Mariano" class="js-input">
+            </div>
+            <div class="float-left">
+                <input type="text" name="lname" placeholder="Last name" class="js-input">
+            </div>
+            <div class="float-left">
+                <input type="text" name="age" placeholder="Age" class="js-input" value="35" disabled>
+            </div>
+
+        </fieldset>
+
+
+    </form>
+
+    <script type="text/javascript" src="js/vendor/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.input.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.js-input').JMDInput();
+
+            //$('.js-input').JMDInput('destroy');
+        });
+    </script>
+</body>
+</html>

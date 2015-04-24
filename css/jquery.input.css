@@ -1,0 +1,80 @@
+.jmd-ctrl{
+    padding: 15px;
+    position: relative;
+}
+
+.jmd-ctrl input[type=text], .jmd-ctrl textarea {
+    margin: 0em;
+    font: normal normal normal 13.3333330154419px/normal Arial;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    border: none;
+    background: none;
+    outline: none;
+    vertical-align: baseline;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-bottom: solid 1px black;
+    height: 26px;
+}
+
+.jmd-ctrl .jmd-label{
+    order: 1;
+    pointer-events: none;
+    padding-left: 2px;
+    z-index: 1;
+    -webkit-transform: translate3d(0, 24px, 0) scale(1);
+    transform: translate3d(0, 24px, 0) scale(1);
+    transition: -webkit-transform cubic-bezier(0.25, 0.8, 0.25, 1) 0.25s;
+    transition: transform cubic-bezier(0.25, 0.8, 0.25, 1) 0.25s;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    display: block;
+    font: normal normal normal 13.3333330154419px/normal Arial;
+}
+
+.jmd-ctrl.jmd-float .jmd-label{
+    -webkit-transform: translate3d(0, 4px, 0) scale(.8);
+    transform: translate3d(0, 4px, 0) scale(.8);
+}
+
+
+/********** Dark theme **********/
+.jmd-dark{
+    background-color: rgb(66,66,66);
+}
+
+.jmd-dark .jmd-label{
+    color: rgba(255,255,255,0.75);
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px, rgba(0, 0, 0, 0.4) -1px -1px 0px;
+}
+.jmd-dark input[type=text], .jmd-dark textarea{
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.117647);
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.4), -1px -1px 0px rgba(0,0,0,0.4)
+}
+
+.jmd-dark.jmd-ctrl.jmd-focused input[type=text], .jmd-dark.jmd-ctrl.jmd-focused textarea{
+    border-bottom: solid 2px rgb(255,235,59);
+}
+
+.jmd-dark.jmd-ctrl.jmd-focused .jmd-label{
+    color: rgb(255,235,59);
+}
+
+.jmd-dark.jmd-disabled .jmd-label{
+    color: rgba(255,255,255,0.3);
+}
+
+.jmd-dark.jmd-disabled input[type=text], .jmd-dark.jmd-disabled textarea{
+    color: rgba(255,255,255,0.4);
+}
