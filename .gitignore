@@ -1,1 +1,4 @@
 .idea
+.sass-cache/
+bower_components/
+sass/.sass-cache/
