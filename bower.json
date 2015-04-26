@@ -1,0 +1,14 @@
+{
+  "name": "jquery-material-design",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jeet": "latest",
+    "normalize.scss": "2.2.0",
+    "jquery": "latest"
+  }
+}
